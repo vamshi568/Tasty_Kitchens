@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,12 +19,13 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+body{
+  overflow-x: hidden;
+}
+.listdots li.slick-active > button::before {
+  color: white !important;
+  transform: scale(2);
+}
+.listdots li> button::before {
+  color: rgb(255, 255, 255) !important;
 }
