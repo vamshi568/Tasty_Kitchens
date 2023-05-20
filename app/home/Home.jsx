@@ -49,7 +49,7 @@ const [isloading,setloading]=useState(false)
       if (isloading){
         return <MyLoader/>
       }
-      if (token===undefined){
+      if (token===undefined && typeof window !== 'undefined'){
         window.location.href = '/login'
       }
   return (
