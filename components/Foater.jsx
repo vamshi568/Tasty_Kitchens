@@ -21,7 +21,9 @@ const Foater = () => {
 <AiFillTwitterSquare/>
 <FaFacebookSquare/>
 </div>
-<div className='w-full text-[#ffffff6f] p-1 flex justify-between pl-2 bg-[#1d2d51]'>
+<div className=' text-[#ffffff6f] w-screen p-1 flex justify-center pl-2 bg-[#1d2d51]'>
+
+<div className='w-screen sm:w-11/12 flex justify-between'>
   <div className='flex items-center '>
     <p className='inline-block'>Build With</p>
     <img src='/next.svg' alt='next' className='ml-2 h-3' />
@@ -31,6 +33,7 @@ const Foater = () => {
       <span><FaRegCopyright className='inline' /></span> 2023 Vamshi
     </p>
   </a>
+</div>
 </div>
 </div>
     
