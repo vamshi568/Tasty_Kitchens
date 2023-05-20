@@ -44,7 +44,7 @@ const Cart1 = () => {
       <img className="w-[425px] h-[367px]" src='/cooking1.svg' alt="no orders"/>
       <h1 className="text-[#1E293B] font-medium mt-10 mb-3 text-3xl">No Orders Yet!</h1>
       <p className="text-[#64748B] mb-4 text-base">Your cart is empty. Add something from the menu.</p>
-      <Link href="/home" >
+      <Link href="/" >
           <button className="text-white bg-[#F7931E] py-2 px-4 rounded-lg" onClick={()=>dispatch(activehome())}>Order Now</button>
           </Link>
     </div>

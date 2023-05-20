@@ -17,7 +17,7 @@ const Payment = () => {
         <h1 className='text-[#1E293B] mt-10 mb-6 font-medium text-2xl'>Payment Successful</h1>
         <p className='text-[#64748B] text-base'>Thank you for ordering </p>
         <p className='text-[#64748B] text-base mb-8'>Your payment is successfully completed</p>
-        <Link href={'/home'}>
+        <Link href={'/'}>
           <button className="text-white bg-[#F7931E] py-2 px-4 rounded-lg" onClick={()=>dispatch(activehome())}>Go To Home Page</button>
           </Link>
     </div>

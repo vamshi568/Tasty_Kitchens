@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { MdRestaurantMenu } from "react-icons/md";
 import { IoIosRestaurant } from "react-icons/io";
 import { useState } from "react";
@@ -21,12 +20,12 @@ const Nav = () => {
       <div className="w-screen flex justify-center">
         <div className="flex justify-around sm:justify-between items-center sm:w-11/12 w-screen max-w-[1040px] h-[96px]">
           <div className=" flex gap-4">
-            <Image
-              className=""
+            <img
+              className="h-[53px] 
+              w-[43px]"
               src="/Frame274.svg"
               alt="logo"
-              height={53}
-              width={43}
+              
             />
             <h1 className="italic text-2xl font-bold text-[#F7931E]">
               Tasty kitchens
@@ -34,7 +33,7 @@ const Nav = () => {
           </div>
           <div className="sm:flex hidden items-center gap-8">
            
-            <Link href="/home" onClick={() => dispatch(activehome())}>
+            <Link href="/" onClick={() => dispatch(activehome())}>
               <p
                 className="font-bold "
                 style={{
@@ -74,7 +73,7 @@ const Nav = () => {
       {menubtn && (
         <div className="sm:hidden flex justify-around">
           <div className="flex justify-around items-center gap-8">
-            <Link href="/home" onClick={() => dispatch(activehome())}>
+            <Link href="/" onClick={() => dispatch(activehome())}>
               <p
                 className="font-bold "
                 style={{

@@ -27,7 +27,7 @@ const Login = () => {
     if (res.status === 200) {
       const token = data.jwt_token;
       Cookies.set("jwt_token", token, { expires: 30 });
-      router.push("/home");
+      router.push("/");
     } else {
       seterrror(`* ${data.error_msg}`);
     }
