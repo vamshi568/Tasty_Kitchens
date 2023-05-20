@@ -92,7 +92,7 @@ const Restaurant = () => {
       >
         <div className="flex max-w-[1040px] max-[600px]:relative w-screen sm:w-11/12 h-[188px] sm:h-[344px] items-center gap-8 ">
           <img
-            className="h-[221px] w-[221px] max-[600px]:rounded-full max-[600px]-absolute -top-14 -left-16 sm:h-[280px] sm:w-[445px]  rounded-lg"
+            className="h-[221px] w-[221px] max-[600px]:rounded-full max-[600px]:absolute -top-14 -left-16 sm:h-[280px] sm:w-[445px]  rounded-lg"
             src={Restaurantdetails.image_url}
             alt={Restaurantdetails.id}
           />

@@ -71,7 +71,7 @@ const Cart1 = () => {
                 src={e.image_url}
                 alt={e.id}
                 />
-              <p className="text-[#183B56] text-xl font-medium">{e.name}</p>
+              <p className="text-[#183B56] max-[600px]:hidden text-xl font-medium">{e.name}</p>
               <div className="sm:hidden flex flex-col  gap-2 text-[#475569]">
               <p className="text-[#183B56] text-xl font-medium">{e.name}</p>
               <div className="flex items-center gap-4">
