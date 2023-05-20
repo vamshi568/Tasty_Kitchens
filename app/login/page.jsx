@@ -57,6 +57,7 @@ const Login = () => {
                   className="mb-6 py-2 px-4 bg-[#E2E8F0] h-10"
                   type="text"
                   id="username"
+                  placeholder="rahul"
                   required
                 />
                 <label htmlFor="Password">Password</label>
@@ -65,6 +66,7 @@ const Login = () => {
                   type="password"
                   name=""
                   id="Password"
+                  placeholder="rahul@2021"
                   required
                 />
                 <button
