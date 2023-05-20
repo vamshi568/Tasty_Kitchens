@@ -24,7 +24,7 @@ const [isloading,setloading]=useState(false)
     pauseOnHover: true,
     appendDots: (dots) => (
       <div>
-        <ul className="-mt-20 listdots "> {dots} </ul>
+        <ul className="-mt-16 sm:-mt-20 listdots "> {dots} </ul>
       </div>
     ),
   };
@@ -59,7 +59,7 @@ const [isloading,setloading]=useState(false)
         <div className="flex justify-center ">
         <Slider
           {...settings}
-          className="max-w-[1040px]  w-screen sm:w-11/12 h-[320px]"
+          className="max-w-[1040px]  w-screen sm:w-11/12 sm:h-[320px]"
         >
           {offers.map((e) => (
             <div key={e.id}>

@@ -71,7 +71,7 @@ const Nav = () => {
       {/* mobile veiw */}
 
       {menubtn && (
-        <div className="sm:hidden flex justify-around">
+        <div className="sm:hidden mb-5 flex justify-around">
           <div className="flex justify-around items-center gap-8">
             <Link href="/" onClick={() => dispatch(activehome())}>
               <p

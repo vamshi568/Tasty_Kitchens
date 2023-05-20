@@ -83,12 +83,12 @@ const Home1 = () => {
   return (
     <>
    
-      <div className=" relative flex flex-col  items-center h-[740px]">
-        <div className="max-w-[1040px] w-screen sm:w-11/12 py-16">
-          <h1 className="text-3xl font-bold text-[#183B56] mb-2">
+      <div className=" relative flex flex-col  items-center sm:h-[740px]">
+        <div className="max-w-[1040px] w-screen max-[600px]:px-8 sm:w-11/12 py-8 sm:pt-16">
+          <h1 className="text-3xl  font-bold text-[#183B56] mb-2">
             Popular Restaurants
           </h1>
-          <div className="flex justify-between">
+          <div className="sm:flex-row flex flex-col max-[600px]:gap-4  sm:justify-between">
             <p className="text-[#64748B]">
               Select Your favarote resturant special dish and make your day
               happy...
@@ -98,7 +98,7 @@ const Home1 = () => {
             <input className="focus:outline-none border-2 border-solid h-6 border-gray-600 rounded-l-md px-2" type="search" placeholder="search here.." onChange={rendersort} value={search}/>
             <button className="text-xl h-6 bg-gray-600 rounded-r-md text-white" onClick={rendersearch}><BiSearchAlt/></button>
             </div>
-            <div className="flex justify-center items-center gap-1">
+            <div className="flex sm:justify-center items-center gap-1">
               <BiDish className="text-[#475569] text-xl " />
               <select
                 id="sortDropdown"
@@ -115,13 +115,13 @@ const Home1 = () => {
             </div>
           </div>
         </div>
-        <hr className="-mt-14 w-screen sm:w-11/12 max-w-[1040px] h-1 opacity-50 bg-[#475569]" />
-        <div className="flex sm:flex-row flex-col mt-12 justify-center max-w-[1040px]  flex-wrap text-[#64748B] gap-8 ">
+        <hr className=" w-screen sm:w-11/12 max-w-[1040px] h-1 opacity-50 bg-[#475569]" />
+        <div className="flex sm:flex-row flex-col mt-12  sm:justify-center max-w-[1040px]  flex-wrap text-[#64748B] gap-8 ">
           {popularres!==undefined ?popularres.map((e) => (
             <Link href={`/resturant?id=${e.id}`} key={e.id}>
             <div   className="flex gap-4">
               <img
-                className="w-[148px] h-24 rounded-lg"
+                className="w-[160px] h-[100px] sm:w-[148px] sm:h-24 rounded-lg"
                 src={e.image_url}
                 alt={e.id}
                 />
@@ -148,7 +148,7 @@ const Home1 = () => {
             </div>}
         </div>
         {popularres!==undefined?
-        <div className="absolute bottom-0">
+        <div className="sm:absolute bottom-0">
 
         
         <div className="flex gap-3 text-3xl text-[#334155] mb-16 mt-16  ">
