@@ -21,14 +21,18 @@ const Foater = () => {
 <AiFillTwitterSquare/>
 <FaFacebookSquare/>
 </div>
-<a className='w-full text-[#ffffff6f] text-right bg-[#0b101e]' href='https://github.com/vamshi568' target='_blank'>
-
-<p className='font-semibold pr-1'>Copyright <span><FaRegCopyright className='inline'/></span> 2023 Vamshi </p>
-</a>
-
-
-
-    </div>
+<div className='w-full text-[#ffffff6f] p-1 flex justify-between pl-2 bg-[#1d2d51]'>
+  <div className='flex items-center '>
+    <p className='inline-block'>Build With</p>
+    <img src='/next.svg' alt='next' className='ml-2 h-3' />
+  </div>
+  <a href='https://github.com/vamshi568' target='_blank' className='font-semibold'>
+    <p className='pl-1'>
+      <span><FaRegCopyright className='inline' /></span> 2023 Vamshi
+    </p>
+  </a>
+</div>
+</div>
     
   )
 }
